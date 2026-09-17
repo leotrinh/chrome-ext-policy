@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Best Bookmark</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #dbe7f3;
+            background: #07111f;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1, h2, h3 { color: #14b8a6; }
+        .container {
+            background: #0d1b2a;
+            padding: 2rem;
+            border: 1px solid #24364d;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,.28);
+        }
+        .update-date {
+            color: #91a4bc;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        p, li { color: #dbe7f3; }
+        code {
+            color: #22d3ee;
+            background: #132238;
+            padding: .1rem .3rem;
+            border-radius: 4px;
+        }
+        a { color: #22d3ee; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: #fff; }
+        .note {
+            background: #132238;
+            border-left: 4px solid #14b8a6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+        }
+        @media (max-width: 640px) {
+            body { padding: 1rem; }
+            .container { padding: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="update-date">Last Updated: September 17, 2026</p>
+
+        <p>This Privacy Policy applies to the <strong>Best Bookmark</strong> Chrome Extension (hereinafter referred to as "the Extension"), developed by Leo.</p>
+
+        <h2>1. Privacy Model</h2>
+        <p>Best Bookmark follows a <strong>local-first privacy model</strong>. The Extension does not require an account or a Best Bookmark backend service.</p>
+        <p><strong>We do not collect, sell, transmit, or share your bookmark collection, browsing history, personal information, or usage activity with Best Bookmark servers or third-party analytics services.</strong></p>
+
+        <h2>2. Bookmark Data</h2>
+        <p>The Extension uses Chrome's bookmark APIs to provide features such as:</p>
+        <ul>
+            <li>Searching your bookmarks.</li>
+            <li>Displaying bookmark folders and bookmark metadata.</li>
+            <li>Detecting duplicate bookmarks.</li>
+            <li>Helping you organize bookmarks and folders.</li>
+            <li>Editing, moving, or removing bookmarks when you explicitly request those actions.</li>
+            <li>Providing undo or recovery information for supported bookmark operations.</li>
+        </ul>
+        <p>Bookmark titles, URLs, folder structures, and related metadata are processed locally within your browser. Best Bookmark does not upload your bookmark collection to an external Best Bookmark server.</p>
+
+        <h2>3. Data Stored Locally</h2>
+        <p>To provide its features, the Extension may store the following information locally using Chrome's built-in storage APIs such as <code>chrome.storage.local</code> and <code>chrome.storage.sync</code>:</p>
+        <ul>
+            <li>Extension preferences and user settings.</li>
+            <li>Bookmark search and organization preferences.</li>
+            <li>Link-health scan results and timestamps.</li>
+            <li>Link-health exclusion rules.</li>
+            <li>Temporary undo and recovery records for bookmark changes.</li>
+            <li>Cached metadata used to improve Extension performance.</li>
+        </ul>
+        <p>This information is used only to operate Best Bookmark and is not sent to a Best Bookmark server.</p>
+
+        <h2>4. Link Health Checks</h2>
+        <p>Best Bookmark includes an optional Link Health feature that can check whether bookmarked HTTP and HTTPS URLs respond successfully.</p>
+        <div class="note"><strong>Important:</strong> Link Health checks are only performed when you explicitly start a scan.</div>
+        <p>When Link Health is used, your browser sends network requests directly to the websites represented by the bookmarked URLs being checked. These requests are necessary to determine whether a URL responds, redirects, requires authentication, is unavailable, or returns another HTTP status.</p>
+        <p>Best Bookmark does not proxy these requests through its own servers and does not receive a copy of the URLs being checked.</p>
+        <p>Because these requests are sent directly to third-party websites, those websites may receive ordinary technical information associated with an Internet request, such as your IP address, browser/network information, request timestamp, and the requested URL, in accordance with each website's own privacy practices.</p>
+
+        <h2>5. Optional Website Access</h2>
+        <p>The Link Health feature may request optional permission to access HTTP and HTTPS websites. This permission is not required for the Extension's normal bookmark search and management features.</p>
+        <p>If you do not grant this optional permission, Best Bookmark will continue to provide its bookmark search, duplicate detection, organization, and management features, while Link Health scanning will remain unavailable.</p>
+
+        <h2>6. Excluded and Unsupported URLs</h2>
+        <p>Best Bookmark allows you to configure URLs or domains that should be skipped during Link Health scans. Local or development addresses may also be excluded based on your settings.</p>
+        <p>Non-HTTP schemes such as <code>chrome://</code>, <code>file://</code>, <code>mailto:</code>, and similar URLs are not processed by the normal Link Health scanner.</p>
+
+        <h2>7. Analytics, Advertising, and Tracking</h2>
+        <p>Best Bookmark does not use advertising SDKs, analytics services, tracking pixels, third-party tracking scripts, or third-party cookies.</p>
+        <p>The Extension does not sell or monetize personal data.</p>
+
+        <h2>8. Authentication Credentials</h2>
+        <p>Best Bookmark does not request, collect, or store passwords for bookmarked websites.</p>
+        <p>If a website requires authentication and returns an authentication-related response during a Link Health scan, Best Bookmark records only the relevant health-check result needed for the report. It does not attempt to collect the website's login credentials.</p>
+
+        <h2>9. Data Sharing and Third Parties</h2>
+        <p>Best Bookmark does not share your bookmark data with third-party services.</p>
+        <p>The only third-party network communication initiated by Best Bookmark's core functionality occurs when you explicitly use Link Health, in which case your browser communicates directly with the bookmarked websites being checked.</p>
+
+        <h2>10. Data Retention and Deletion</h2>
+        <p>Locally stored Extension data remains on your device until it is cleared through the Extension, removed through Chrome's extension storage management, or deleted when you uninstall the Extension, subject to Chrome's own storage and synchronization behavior.</p>
+        <p>Best Bookmark may also provide controls to clear cached scan results, undo history, and other locally stored Extension data.</p>
+
+        <h2>11. Chrome Sync</h2>
+        <p>Chrome itself may synchronize bookmarks or Extension settings if you have enabled Chrome Sync. Any synchronization performed by Chrome is controlled by Google Chrome and your Google account settings, not by Best Bookmark.</p>
+
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy when Best Bookmark's functionality or data practices change. Any updates will be reflected on this page with a revised "Last Updated" date.</p>
+
+        <h2>13. Contact</h2>
+        <p>If you have questions or concerns about this Privacy Policy or Best Bookmark's data practices, please contact the developer through the Chrome Web Store support page or through the project's GitHub repository: <a href="https://github.com/leotrinh/best-bookmark" target="_blank" rel="noopener noreferrer">github.com/leotrinh/best-bookmark</a>.</p>
+    </div>
+</body>
+</html>
